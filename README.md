@@ -20,6 +20,10 @@ After installation just type:
 python ./main.py
 ```
 
+It should look something like this:
+
+![TUI demo](README/image.png) 
+
 ## Examples of usage of the TLoB python library
 
 All examples you can find in `examples/` folder. To run any example:
