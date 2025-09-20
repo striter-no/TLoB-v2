@@ -1,0 +1,40 @@
+#main-title {
+    content-align: center top;
+    padding: 1 0;
+    text-style: bold;
+    width: 1fr;
+}
+
+#side-bar {
+    width: 25%;
+    height: 100%;
+
+    dock: left;
+    background: $secondary-background;
+    align: center middle;
+}
+
+#main-text {
+    content-align: center middle;
+    width: 1fr;
+    height: 1fr;
+}
+
+.info {
+    text-wrap: nowrap;
+    width: 1fr;
+    margin: 1 0;
+    text-style: bold;
+    color: $text-muted;
+}
+
+.info-rule {
+    color: $secondary-darken-1
+}
+
+.info-value {
+    text-wrap: nowrap;
+    width: 1fr;
+    text-style: italic;
+    color: $primary;
+}
