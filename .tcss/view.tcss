@@ -17,7 +17,36 @@
 #main-text {
     content-align: center middle;
     width: 1fr;
-    height: 1fr;
+}
+
+#page-cont {
+    align: center middle;
+    min-width: 90;
+    width: 1fr;
+    height: 89%;
+}
+
+#nav-cont {
+    margin: 1 0;
+    align: center top;
+    # height: 10%;
+}
+
+#rnd-page {
+    color: $primary-lighten-2;
+
+    margin: 0 1;
+}
+
+#search-page {
+    color: $primary-lighten-2;
+    margin: 0 1;
+}
+
+#share-page {
+    color: $primary-lighten-2;
+
+    margin: 0 1;
 }
 
 .info {

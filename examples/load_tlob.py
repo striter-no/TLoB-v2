@@ -6,12 +6,10 @@ from src.LMath.address import addr_to_B69
 
 def load_page(fork_from: Page, path: str) -> Page:
     with open(path) as f:
-        text = ''.join(
-            char for char in f.read() if char in CLOSE_ALPHABET
-        ) # Also removes \n
+        text = f.read()
 
     return fork_from.fork(
-        text = text,
+        text = text, # Automaticly removes all restricted characters 
         title = os.path.basename(path).replace('-', ' ').capitalize()
     )
 

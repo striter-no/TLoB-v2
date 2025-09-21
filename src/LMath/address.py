@@ -11,7 +11,7 @@ def addr_to_B69(addr: Decimal) -> str:
     neg = addr < 0
     if neg: addr = -addr
 
-    base = len(ALPHABET)  # 64
+    base = len(ALPHABET)  # 69
     chars = []
     n = int(addr)
     while n:
@@ -29,7 +29,6 @@ def addr_from_B69(addr: str) -> Decimal:
         number = number * base + ALPHABET.index(char)
     
     return (-1 if neg else 1) * Decimal(number)
-
 
 def addr_to_ndim(page: Page, dims: int) -> NDIM_Point:
     text = page.get_text()
