@@ -59,7 +59,7 @@ class ShareScreen(ModalScreen):
             yield Rule()
             yield Label(f"Address: {addr_to_B69(self.page.get_addr())}", classes = "value")
             pyperclip.copy(addr_to_B69(self.page.get_addr()))
-            self.notify("Address was copyied to the clipboard")
+            self.notify("Address was copied to the clipboard")
 
     def on_key(self, event: events.Key) -> None:
         if event.key == 'escape':
